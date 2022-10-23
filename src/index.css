@@ -1,17 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&family=Sacramento&family=Ubuntu:ital,wght@1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#bgAnimation{
+   width: 2px;
+    height: 100px;
+    color:#dc9e4b;
+    background: #dc9e4b;
+    transition: width 0.5s;
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#bgAnimation:hover, .inner:hover {
+    width: 250px;
+    color:white;
+   
+}
+@media (min-width: 768px) { 
+    #bgAnimation:hover, .inner:hover {
+        width: 390px;
+        color:white;
+    }
+ }
+
+.footer i:hover {
+    cursor: pointer;
+}
+.fa-facebook {
+
+    color: #136aff
+  
+}
+.fa-linkedin {
+
+    color: #0094df
+  
+}
+.fa-github {
+
+    color: black
+  
 }
