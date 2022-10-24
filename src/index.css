@@ -4,7 +4,7 @@
 @tailwind utilities;
 #bgAnimation{
    width: 2px;
-    height: 100px;
+    height: 80px;
     color:#dc9e4b;
     background: #dc9e4b;
     transition: width 0.5s;
@@ -18,7 +18,7 @@
 }
 @media (min-width: 768px) { 
     #bgAnimation:hover, .inner:hover {
-        width: 390px;
+        width: 240px;
         color:white;
     }
  }

@@ -11,32 +11,31 @@ import git from "../Components/git.svg";
 const Page = () => {
   return (
     <>
-      <div className="h-14 w-[100%] bg-slate-600  md:h-24">
-        <div className="pl-6 pt-3 md:pt-8">
-          <i className="fa-solid fa-bars fa-2x " style={{ color: "white" }}></i>
-        </div>
+      <div className="grid grid-cols-1 justify-items-start h-14 bg-slate-600  md:h-12">
+          <i className="fa-solid fa-bars fa-2x " style={{ color: "white",cursor:"pointer",margin:"10px 0px 0px 10px",}}></i>
+       
       </div>
-      <div className="container w-auto md:ml-10 md:mr-7">
-        <div className="mt-9 flex-col p-3 ml-3 w-72">
+      <div className="container  w-[100%] h-[100%] m-auto">
+        <div className="mt-9 p-3 ml-3 ">
           <div
-            className=" text-white mt-10 space-x-1 text-5xl md:text-8xl "
+            className=" text-white mt-10 space-x-1 text-3xl md:text-3xl lg:text-4xl "
             style={{ lineHeight: "1.2" }}
           >
             I am Mohammad Ehtisham
           </div>
           <div
-            className="type-writing mt-5 text-2xl w-[350px] md:text-3xl"
+            className="type-writing mt-5 text-2xl w-[350px] md:text-xl"
             style={{ color: "#dc9e4b" }}
           >
             Front End Developer
           </div>
           <div
-            className=" text-6xl font-extrabold mt-14 md:text-9xl "
+            className=" text-6xl font-extrabold mt-10 md:text-7xl lg:text-8xl"
             style={{ color: "#dc9e4b" }}
           >
             LETS START!
           </div>
-          <button className="border text-[#dc9e4b] text-xl rounded-3xl pl-8 pr-8 h-14 mt-9 font-medium hover:bg-yellow-600 hover:text-white md:text-3xl md:h-20 md:w-[360px] md:pl-12">
+          <button className="border text-[#dc9e4b] text-xl rounded-3xl pl-8 pr-8 h-14 mt-9 font-medium hover:bg-yellow-600 hover:text-white md:text-xl md:h-12 md:w-[230px] md:pl-6">
             {/* // eslint-disable-next-line */}
             <a
               href="https://drive.google.com/file/d/14A-6jjpEhFzo62Crh57BUcD_p2S6JY27/view?usp=sharing"
@@ -48,20 +47,21 @@ const Page = () => {
             </a>
           </button>
         </div>
-        <div className="text-center m-10">
+        <div className="text-center m-8">
           <hr className="mt-5" />
         </div>
 
         {/* introdction */}
 
         <section className="flex-col ml-3 p-3 mt-16 ">
-          <div className="text-4xl font-bold  text-[#dc9e4b] mb-5 md:text-7xl">
+          <div className="text-4xl font-bold  text-[#dc9e4b] mb-5 md:text-3xl">
             I'm Mohammad Ehtisham
           </div>
           <div
-            className="text-2xl text-white md:text-5xl"
+            className="text-2xl text-white md:text-2xl"
             style={{ lineHeight: 1.2 }}
           >
+             <strong className="text-[#dc9e4b]"> mud plus ouf the olof </strong>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Repellendus blanditiis ullam, eligendi quaerat neque, voluptate
             tempora eos quisquam vitae{" "}
@@ -77,22 +77,22 @@ const Page = () => {
         {/* Skills Section */}
 
         <section className="flex-col ml-3 p-3 mt-16 mb-8">
-          <div id="bgAnimation" className="">
-            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-6 w-[200px] md:text-6xl md:w-[400px]">
+          <div id="bgAnimation">
+            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-6 w-[200px] md:text-4xl md:w-[150px]">
               My Skills
             </div>
           </div>
-          <div className="text-white text-2xl mt-5 md:text-4xl md:mt-12">
+          <div className="text-white text-2xl mt-5 md:text-xl md:mt-8">
             <p>These are my Skills</p>
             <hr className="mt-3" />
           </div>
 
-          {/* here to start grid adjust krni hai */}
-          <div className="grid grid-cols-1 mt-10 text-white text-xl  md:grid-cols-2 md:gap-4 md:text-3xl">
+         
+          <div className="grid grid-cols-1 text-white text-xl  md:grid-cols-4 md:gap-3 md:text-xl lg:grid-cols-5 lg:gap-3 " >
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={html}
                 alt="html5"
               />
@@ -101,7 +101,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={css}
                 alt="html5"
               />
@@ -110,7 +110,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={bootstrap}
                 alt="html5"
               />
@@ -119,7 +119,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={js}
                 alt="html5"
               />
@@ -128,7 +128,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={tailwind}
                 alt="html5"
               />
@@ -137,7 +137,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={reactlogo}
                 alt="html5"
               />
@@ -146,7 +146,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={cpp}
                 alt="html5"
               />
@@ -155,7 +155,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto", width: "128px" }}
+                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={sql}
                 alt="html5"
               />
@@ -164,7 +164,7 @@ const Page = () => {
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "120px", margin: "auto", width: "128px" }}
+                style={{ height: "120px", margin: "auto",  width: "105px" }}
                 src={git}
                 alt="html5"
               />
@@ -173,17 +173,17 @@ const Page = () => {
 
             {/* Skills progression */}
           </div>
-          <section className="mt-16">
-            <div className="bar  mt-2">
+          <section className="mt-16 w-[70%] h-[100%] m-auto">
+            <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">HTML</span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl font-medium text-white ">HTML</span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   85%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "85%" }}
                 ></div>
               </div>
@@ -191,118 +191,118 @@ const Page = () => {
 
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">CSS</span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl font-medium text-white ">CSS</span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   60%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "60%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">
+                <span className="text-lg md:text-xl font-medium text-white ">
                   Bootstrap
                 </span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   85%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6"
                   style={{ width: "85%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">
+                <span className="text-lg md:text-xl font-medium text-white ">
                   Javascript
                 </span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   70%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "70%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">
+                <span className="text-lg md:text-xl font-medium text-white ">
                   Tailwind-CSS
                 </span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   65%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "65%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">Reactjs</span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl font-medium text-white ">Reactjs</span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   60%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "60%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl  font-medium text-white ">C++</span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl  font-medium text-white ">C++</span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   85%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "85%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">MySQL</span>
-                <span className="text-sm  md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl font-medium text-white ">MySQL</span>
+                <span className="text-sm  md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   85%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "85%" }}
                 ></div>
               </div>
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-3xl font-medium text-white ">Git</span>
-                <span className="text-sm md:text-xl font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                <span className="text-lg md:text-xl font-medium text-white ">Git</span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   60%
                 </span>
               </div>
               <div className="w-full bg-slate-700">
                 <div
-                  className="bg-[#dc9e4b] h-8 "
+                  className="bg-[#dc9e4b] h-6 "
                   style={{ width: "60%" }}
                 ></div>
               </div>
@@ -316,11 +316,11 @@ const Page = () => {
           className="flex-col justify-items-center ml-3 p-3 mt-16 mb-8"
         >
           <div id="bgAnimation" className="border-l-2 border-[#dc9e4b] h-20">
-            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-4 w-[250px] md:text-6xl md:w-[400px]">
+            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-4 w-[250px] md:text-4xl md:w-[280px]">
               My Services
             </div>
           </div>
-          <div className="text-white text-2xl mt-5 mb-5 md:text-4xl md:mt-12 ">
+          <div className="text-white text-2xl mt-5 mb-5 md:text-xl md:mt-7 ">
             <p>My services are</p>
             <hr className="mt-3  border-[#dc9e4b]" />
           </div>
@@ -332,10 +332,10 @@ const Page = () => {
                   style={{ color: "#dc9e4b" }}
                 ></i>
               </div>
-              <div className="heading text-2xl font-bold mb-4 text-center md:text-5xl">
+              <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
                 Web Development
               </div>
-              <div className="text-xl text-center text-center m-auto md:text-4xl">
+              <div className="text-xl text-center text-center m-auto md:text-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus eligendi pariatur et accusamus ducimus rerum obcaecati
                 saepe deleniti earum nesciunt eius molestiae esse repudiandae
@@ -350,10 +350,10 @@ const Page = () => {
                   style={{ color: "#dc9e4b" }}
                 ></i>
               </div>
-              <div className="heading text-2xl font-bold mb-4 text-center md:text-5xl">
+              <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
                 Programming in C++
               </div>
-              <div className="text-xl text-center  md:text-4xl">
+              <div className="text-xl text-center  md:text-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus eligendi pariatur et accusamus ducimus rerum obcaecati
                 saepe deleniti earum nesciunt eius molestiae esse repudiandae
@@ -366,17 +366,17 @@ const Page = () => {
         {/* Projects Section */}
         <section id="projects" className=" ml-3 p-3 mt-16 mb-8">
           <div id="bgAnimation" className="border-l-2 border-[#dc9e4b] h-20">
-            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-4 w-[290px] md:text-6xl md:w-[400px]">
+            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-4 w-[290px] md:text-4xl md:w-[250px]">
               My Projects
             </div>
           </div>
-          <div className="text-white text-2xl mt-5 md:4xl md:text-4xl md:mt-12">
+          <div className="text-white text-2xl mt-5 md:4xl md:text-xl md:mt-8">
             <p>Here are some of my projects</p>
             <hr className="mt-3 border-[#dc9e4b]" />
           </div>
 
-          <div className="grid grid-cols-1 text-white text-xl text-center  rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5 md:grid-cols-2 md:gap-4 md:text-4xl">
-            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-6 mt-4 mb-5 md:mb-3">
+          <div className="grid grid-cols-1 text-white text-xl text-center  rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5 md:grid-cols-3 md:gap-1 md:text-2xl  lg:grid-cols-4 ">
+            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-6 mt-4 mb-5">
               <a
                 className=" font-md tracking-widest"
                 href="http://tindog-dusky.vercel.app/"
@@ -435,18 +435,18 @@ const Page = () => {
 
         <section
           id="contact"
-          className="flex-col justify-items-center ml-3 p-3 mt-16 mb-8"
+          className="flex-col justify-items-center ml-3 p-3 mt-8 mb-8"
         >
           <div id="bgAnimation" className="border-l-2 border-[#dc9e4b] h-20">
-            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-7 w-[200px] md:text-6xl ">
+            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-7 w-[200px] md:text-4xl ">
               Contact
             </div>
           </div>
-          <div className="text-white text-2xl mt-5 md:text-4xl md:mt-12">
+          <div className="text-white text-2xl mt-5 md:text-xl md:mt-12">
             <p>Here is my phone number</p>
             <hr className="mt-3 border-[#dc9e4b]" />
-            <div className="mt-10 mb-10 w-80 h-32 bg-slate-700 rounded-lg md:h-40 md:w-[400px] md:text-4xl">
-              <div className="text-start pt-4 pl-4 font-semibold tracking-wider md:m">
+            <div className="mt-10 mb-10 w-80 h-32 bg-slate-700 rounded-lg md:text-xl">
+              <div className="text-start pt-4 pl-4 font-semibold tracking-wider ">
                 <p>
                   <i
                     class="fa-solid fa-phone fa-1x mr-3 mb-5"
