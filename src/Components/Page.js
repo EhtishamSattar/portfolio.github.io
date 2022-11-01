@@ -8,14 +8,12 @@ import reactlogo from "../Components/reactlogo.svg";
 import cpp from "../Components/cpp.svg";
 import sql from "../Components/mysql.svg";
 import git from "../Components/git.svg";
+import Navbar from "./Navbar";
 const Page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 justify-items-start h-14 bg-slate-600  md:h-12">
-          <i className="fa-solid fa-bars fa-2x " style={{ color: "white",cursor:"pointer",margin:"10px 0px 0px 10px",}}></i>
-       
-      </div>
-      <div className="container  w-[100%] h-[100%] m-auto">
+      <Navbar/>
+      <div className="container  w-[100%] h-[100%] m-auto lg:pl-6 lg:pr-6">
         <div className="mt-9 p-3 ml-3 ">
           <div
             className=" text-white mt-10 space-x-1 text-3xl md:text-3xl lg:text-4xl "
@@ -59,18 +57,18 @@ const Page = () => {
           </div>
           <div
             className="text-2xl text-white md:text-2xl"
-            style={{ lineHeight: 1.2 }}
+            style={{ lineHeight: 1.5 }}
           >
-             <strong className="text-[#dc9e4b]"> mud plus ouf the olof </strong>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repellendus blanditiis ullam, eligendi quaerat neque, voluptate
-            tempora eos quisquam vitae{" "}
-            <strong className="text-[#dc9e4b]"> mud plus ouf the olof </strong>
-            minus ipsam modi nam ad cum asperiores nulla quas quos excepturi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-            repellendus amet esse sequi, facilis quo saepe dignissimos nesciunt
-            cupiditate ipsam, odit eos corrupti atque non voluptates aliquid
-            voluptatibus officiis vero?
+            an Undergraduate student from <strong className="text-[#dc9e4b]"> Punjab University College Of Information Technology </strong>
+            (Old Campus, Anarkali). I have studied many courses soo far in my bachelors degree program (BSIT) , few of them are of our 
+             main concerns like OOP , Data Structures And Algorithms , Structured Query Language (MySQL) and 
+             Software Requirement Engineering {" "} . So , now I am a third year student (5th Semester) carrying 
+             courses like Design and Analysis Of Algorithms , Computer Networking , Operating System and Artificial
+             Intelligence . Being a hardworking student and most importantly an eager Learner , I want to execute my learnings
+             in a practical and competitive environment and want to learn even more from other mates and seniors.
+            <strong className="text-[#dc9e4b]"> I assure you </strong> the co-operation , hardwork and dedication 
+            to my job and it's is the reason too that you should hire me .
+            
           </div>
         </section>
 
@@ -78,17 +76,17 @@ const Page = () => {
 
         <section className="flex-col ml-3 p-3 mt-16 mb-8">
           <div id="bgAnimation">
-            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-6 w-[200px] md:text-4xl md:w-[150px]">
+            <div className="inner text-4xl font-bold text-[#dc9e4b] pl-5 pt-6 w-[200px] md:text-4xl md:w-[200px]">
               My Skills
             </div>
           </div>
           <div className="text-white text-2xl mt-5 md:text-xl md:mt-8">
             <p>These are my Skills</p>
-            <hr className="mt-3" />
+            <hr className="mt-3  border-[#dc9e4b]" />
           </div>
 
          
-          <div className="grid grid-cols-1 text-white text-xl  md:grid-cols-4 md:gap-3 md:text-xl lg:grid-cols-5 lg:gap-3 " >
+          <div className="grid grid-cols-1 mt-6 text-white text-xl  md:grid-cols-4 md:gap-3 md:text-xl lg:grid-cols-5 lg:gap-3 " >
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
@@ -173,7 +171,7 @@ const Page = () => {
 
             {/* Skills progression */}
           </div>
-          <section className="mt-16 w-[70%] h-[100%] m-auto">
+          <section className="mt-16 lg:w-[90%] h-[100%] m-auto">
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
                 <span className="text-lg md:text-xl font-medium text-white ">HTML</span>
@@ -324,7 +322,7 @@ const Page = () => {
             <p>My services are</p>
             <hr className="mt-3  border-[#dc9e4b]" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col" >
             <div className="flex flex-col mt-7 text-white ">
               <div className="text-center">
                 <i
@@ -335,11 +333,11 @@ const Page = () => {
               <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
                 Web Development
               </div>
-              <div className="text-xl text-center text-center m-auto md:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus eligendi pariatur et accusamus ducimus rerum obcaecati
-                saepe deleniti earum nesciunt eius molestiae esse repudiandae
-                sit eveniet, officiis est illum doloremque?
+              <div className="text-xl  text-center m-auto md:text-2xl" style={{lineHeight:1.5}}>
+                Along my Curriculum , as a part of self study , I am learning and enjoying frontend web development. I also worked little with backend (MERN) but 
+                now , my concern is Frontend development. I made some awesome frontend projects. Many of my friends are working on frontend development and we 
+                always enjoy discussing problems and any sort of queries and it literally makes 
+                things much easier.
               </div>
             </div>
 
@@ -353,11 +351,11 @@ const Page = () => {
               <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
                 Programming in C++
               </div>
-              <div className="text-xl text-center  md:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus eligendi pariatur et accusamus ducimus rerum obcaecati
-                saepe deleniti earum nesciunt eius molestiae esse repudiandae
-                sit eveniet, officiis est illum doloremque?
+              <div className="text-xl text-center  md:text-2xl" style={{lineHeight:1.5}}>
+                I learned C++ programming language in my bachelors degree and worked alot 
+                with the Object Oriented approach and learned Data Structures and Algorithms . I had many labs 
+                where we (classmates) are assigned the tasks related OOP & DSA to do in a limited time 
+                stamp. 
               </div>
             </div>
           </div>
@@ -445,7 +443,7 @@ const Page = () => {
           <div className="text-white text-2xl mt-5 md:text-xl md:mt-12">
             <p>Here is my phone number</p>
             <hr className="mt-3 border-[#dc9e4b]" />
-            <div className="mt-10 mb-10 w-80 h-32 bg-slate-700 rounded-lg md:text-xl">
+            <div className="mt-10 mb-10 w-80  h-32 bg-slate-700 rounded-lg md:text-xl">
               <div className="text-start pt-4 pl-4 font-semibold tracking-wider ">
                 <p>
                   <i
