@@ -403,7 +403,7 @@ const Page = () => {
                 rel="noreferer"
                 target="_blank"
               >
-                Allama Library
+                Book Keeper
               </a>
             </div>
             <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
@@ -463,7 +463,7 @@ const Page = () => {
 
       <div className="footer bg-slate-700 h-24">
         <div className="flex flex-row justify-center pt-7 pb-7">
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/mohammad.ehtisham.7731" target="_blank">
             <i
               className="fa-brands fa-facebook fa-2x "
               style={{ marginLeft: "20px" }}
@@ -471,7 +471,7 @@ const Page = () => {
               {" "}
             </i>
           </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+          <a href="https://www.linkedin.com/in/mohammad-ehtisham-114477206/" target="_blank">
             <i
               className="fa-brands fa-linkedin fa-2x"
               style={{ marginLeft: "20px" }}
