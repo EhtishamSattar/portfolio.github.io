@@ -36,7 +36,7 @@ const Page = () => {
           <button className="border text-[#dc9e4b] text-xl rounded-3xl pl-8 pr-8 h-14 mt-9 font-medium hover:bg-yellow-600 hover:text-white md:text-xl md:h-12 md:w-[230px] md:pl-6">
             {/* // eslint-disable-next-line */}
             <a
-              href="https://drive.google.com/file/d/14A-6jjpEhFzo62Crh57BUcD_p2S6JY27/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iww2JLVKJ0dL_LDMojrtMbz8soFWAbXC/view?usp=sharing"
               download="MyResume.pdf"
               rel="noreferrer"
               target="_blank"
@@ -424,6 +424,16 @@ const Page = () => {
                 target="_blank"
               >
                 Inotebook
+              </a>
+            </div>
+            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
+              {/* eslint-disable-next-line */}
+              <a
+                className=" font-md tracking-widest"
+                href="https://e-site-one.vercel.app/"
+                target="_blank"
+              >
+                Ecommerce Store
               </a>
             </div>
           </div>
