@@ -8,21 +8,20 @@ import reactlogo from "../Components/reactlogo.svg";
 import cpp from "../Components/cpp.svg";
 import sql from "../Components/mysql.svg";
 import git from "../Components/git.svg";
-import Navbar from "./Navbar";
+import python from "../Components/python.svg"
 const Page = () => {
   return (
     <>
-      <Navbar/>
       <div className="container  w-[100%] h-[100%] m-auto lg:pl-6 lg:pr-6">
         <div className="mt-9 p-3 ml-3 ">
           <div
-            className=" text-white mt-10 space-x-1 text-3xl md:text-3xl lg:text-4xl "
+            className=" text-white mt-10 space-x-1 text-3xl md:text-3xl lg:text-4xl font-mono"
             style={{ lineHeight: "1.2" }}
           >
             I am Mohammad Ehtisham
           </div>
           <div
-            className="type-writing mt-5 text-2xl w-[350px] md:text-xl"
+            className="type-writing mt-2 text-2xl w-[350px] md:text-xl font-mono"
             style={{ color: "#dc9e4b" }}
           >
             Front End Developer
@@ -59,15 +58,12 @@ const Page = () => {
             className="text-2xl text-white md:text-2xl"
             style={{ lineHeight: 1.5 }}
           >
-            an Undergraduate student from <strong className="text-[#dc9e4b]"> Punjab University College Of Information Technology </strong>
-            (Old Campus, Anarkali). I have studied many courses soo far in my bachelors degree program (BSIT) , few of them are of our 
-             main concerns like OOP , Data Structures And Algorithms , Structured Query Language (MySQL) and 
-             Software Requirement Engineering {" "} . So , now I am a third year student (5th Semester) carrying 
-             courses like Design and Analysis Of Algorithms , Computer Networking , Operating System and Artificial
-             Intelligence . Being a hardworking student and most importantly an eager Learner , I want to execute my learnings
-             in a practical and competitive environment and want to learn even more from other mates and seniors.
-            <strong className="text-[#dc9e4b]"> I assure you </strong> the co-operation , hardwork and dedication 
-            to my job and it's is the reason too that you should hire me .
+            An undergraduate student studying at the <strong className="text-[#dc9e4b]">Punjab University College of Information Technology (Old Campus, Anarkali).</strong>
+            I've gotten an education in Object-Oriented Programming, Data Structures and Algorithms,
+            MySQL, Operating Systems, Computer Networking, Software Requirements and Software Engineering.
+            I'm highly invested in front-end web development and have completed some learning projects with  <strong className="text-[#dc9e4b]">React.js.</strong>
+            I am seeking out an <strong className="text-[#dc9e4b]">internship</strong> in order to develop my capabilities and gain practical experience during this period.
+            I'm eager to work and have the skills to be of great value to your projects.
             
           </div>
         </section>
@@ -81,45 +77,28 @@ const Page = () => {
             </div>
           </div>
           <div className="text-white text-2xl mt-5 md:text-xl md:mt-8">
-            <p>These are my Skills</p>
+            <p>Skills to offer</p>
             <hr className="mt-3  border-[#dc9e4b]" />
           </div>
 
-         
+
           <div className="grid grid-cols-1 mt-6 text-white text-xl  md:grid-cols-4 md:gap-3 md:text-xl lg:grid-cols-5 lg:gap-3 " >
+            
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
                 style={{ height: "128px", margin: "auto", width: "105px" }}
-                src={html}
-                alt="html5"
-              />
-              <p className=" font-bold">HTML</p>
-            </div>
-            <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
-              <img
-                className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
-                src={css}
-                alt="html5"
-              />
-              <p className="font-bold">CSS</p>
-            </div>
-            <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
-              <img
-                className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
                 src={bootstrap}
-                alt="html5"
+                alt="bootstrap"
               />
               <p className="font-bold">Bootstrap</p>
             </div>
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={js}
-                alt="html5"
+                alt="js"
               />
               <p className=" font-bold">Javascript</p>
             </div>
@@ -128,43 +107,52 @@ const Page = () => {
                 className="h-32 w-32"
                 style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={tailwind}
-                alt="html5"
+                alt="tailwindcss"
               />
               <p className="font-bold">Tailwind CSS</p>
             </div>
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={reactlogo}
-                alt="html5"
+                alt="reactlogo"
               />
               <p className="font-bold">Reactjs</p>
             </div>
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={cpp}
-                alt="html5"
+                alt="cpp"
               />
               <p className=" font-bold">C++</p>
             </div>
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
+                className="h-32 w-32 "
+                style={{ height: "128px", margin: "auto", width: "105px" ,}}
+                src={python}
+                alt="python"
+              />
+              <p className=" font-bold">Python</p>
+            </div>
+            <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
+              <img
                 className="h-32 w-32"
-                style={{ height: "128px", margin: "auto",  width: "105px" }}
+                style={{ height: "128px", margin: "auto", width: "105px" }}
                 src={sql}
-                alt="html5"
+                alt="sql"
               />
               <p className=" font-bold">MySQL</p>
             </div>
             <div className="text-center bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-2 mb-5">
               <img
                 className="h-32 w-32"
-                style={{ height: "120px", margin: "auto",  width: "105px" }}
+                style={{ height: "120px", margin: "auto", width: "105px" }}
                 src={git}
-                alt="html5"
+                alt="git"
               />
               <p className=" font-bold mt-2">Git</p>
             </div>
@@ -172,35 +160,6 @@ const Page = () => {
             {/* Skills progression */}
           </div>
           <section className="mt-16 lg:w-[90%] h-[100%] m-auto">
-            <div className="bar mt-2">
-              <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-xl font-medium text-white ">HTML</span>
-                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
-                  85%
-                </span>
-              </div>
-              <div className="w-full bg-slate-700">
-                <div
-                  className="bg-[#dc9e4b] h-6 "
-                  style={{ width: "85%" }}
-                ></div>
-              </div>
-            </div>
-
-            <div className="bar mt-2">
-              <div className="flex justify-between mb-1">
-                <span className="text-lg md:text-xl font-medium text-white ">CSS</span>
-                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
-                  60%
-                </span>
-              </div>
-              <div className="w-full bg-slate-700">
-                <div
-                  className="bg-[#dc9e4b] h-6 "
-                  style={{ width: "60%" }}
-                ></div>
-              </div>
-            </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
                 <span className="text-lg md:text-xl font-medium text-white ">
@@ -223,15 +182,38 @@ const Page = () => {
                   Javascript
                 </span>
                 <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
+                  65%
+                </span>
+              </div>
+
+              <div className="w-full bg-slate-700">
+                <div
+                  className="bg-[#dc9e4b] h-6 "
+                  style={{ width: "65%" }}
+                ></div>
+              </div>
+              
+              
+            </div>
+
+            <div className="bar mt-2">
+              <div className="flex justify-between mb-1">
+                <span className="text-lg md:text-xl font-medium text-white ">
+                  Python
+                </span>
+                <span className="text-sm md:text-md font-medium text-[#dc9e4b] border-[1px] rounded-md pl-2 pr-2 mb-2">
                   70%
                 </span>
               </div>
+
               <div className="w-full bg-slate-700">
                 <div
                   className="bg-[#dc9e4b] h-6 "
                   style={{ width: "70%" }}
                 ></div>
               </div>
+              
+              
             </div>
             <div className="bar mt-2">
               <div className="flex justify-between mb-1">
@@ -331,12 +313,12 @@ const Page = () => {
                 ></i>
               </div>
               <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
-                Web Development
+                Front-End Web Development
               </div>
-              <div className="text-xl  text-center m-auto md:text-2xl" style={{lineHeight:1.5}}>
-                Along my Curriculum , as a part of self study , I am learning and enjoying frontend web development. I also worked little with backend (MERN) but 
-                now , my concern is Frontend development. I made some awesome frontend projects. Many of my friends are working on frontend development and we 
-                always enjoy discussing problems and any sort of queries and it literally makes 
+              <div className="text-xl  text-center m-auto md:text-2xl pl-16 pr-16" style={{ lineHeight: 1.5 }}>
+                Along my Curriculum , as a part of self study , I am learning and enjoying frontend web development. I also worked little with backend (MERN) but
+                now , my concern is Frontend development. I made some awesome frontend projects. Many of my friends are working on frontend development and we
+                always enjoy discussing problems and any sort of queries and it literally makes
                 things much easier.
               </div>
             </div>
@@ -349,13 +331,13 @@ const Page = () => {
                 ></i>
               </div>
               <div className="heading text-2xl font-bold mb-4 text-center md:text-3xl">
-                Programming in C++
+                Coding in C++/Python
               </div>
-              <div className="text-xl text-center  md:text-2xl" style={{lineHeight:1.5}}>
-                I learned C++ programming language in my bachelors degree and worked alot 
-                with the Object Oriented approach and learned Data Structures and Algorithms . I had many labs 
-                where we (classmates) are assigned the tasks related OOP & DSA to do in a limited time 
-                stamp. 
+              <div className="text-xl text-center  md:text-2xl pl-16 pr-16" style={{ lineHeight: 1.5 }}>
+                I learned C++ programming language in my bachelors degree and worked alot
+                with the Object Oriented approach and learned Data Structures and Algorithms . I had many labs
+                where we (classmates) are assigned the tasks related OOP & DSA to do in a limited time
+                stamp.
               </div>
             </div>
           </div>
@@ -376,7 +358,7 @@ const Page = () => {
           <div className="grid grid-cols-1 text-white text-xl text-center  rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5 md:grid-cols-3 md:gap-1 md:text-2xl  lg:grid-cols-4 ">
             <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-6 mt-4 mb-5">
               <a
-                className=" font-md tracking-widest"
+                className=" font-md tracking-widest p-8"
                 href="http://tindog-dusky.vercel.app/"
                 rel="noreferer"
                 target="_blank"
@@ -387,7 +369,7 @@ const Page = () => {
             <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
               {/* eslint-disable-next-line */}
               <a
-                className=" font-md tracking-widest"
+                className=" font-md tracking-widest p-8"
                 href="http://textutils-react-coral.vercel.app/"
                 rel="noreferer"
                 target="_blank"
@@ -395,31 +377,12 @@ const Page = () => {
                 TextUtils
               </a>
             </div>
+            
+            
             <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
               {/* eslint-disable-next-line */}
               <a
-                className=" font-md tracking-widest"
-                href="http://allamalibrary.vercel.app/"
-                rel="noreferer"
-                target="_blank"
-              >
-                Book Keeper
-              </a>
-            </div>
-            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
-              {/* eslint-disable-next-line */}
-              <a
-                className=" font-md tracking-widest"
-                href="http://drumkit-kappa-swart.vercel.app/"
-                target="_blank"
-              >
-                Drumkit
-              </a>
-            </div>
-            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
-              {/* eslint-disable-next-line */}
-              <a
-                className=" font-md tracking-widest"
+                className=" font-md tracking-widest p-8"
                 href="https://github.com/EhtishamSattar/iNoteBook.github.io"
                 target="_blank"
               >
@@ -429,11 +392,22 @@ const Page = () => {
             <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
               {/* eslint-disable-next-line */}
               <a
-                className=" font-md tracking-widest"
+                className=" font-md tracking-widest p-8"
                 href="https://e-site-one.vercel.app/"
                 target="_blank"
               >
                 Ecommerce Store
+              </a>
+            </div>
+
+            <div className="text-center  bg-slate-700 rounded-2xl pb-5 pt-3 mr-2 mt-4 mb-5">
+              {/* eslint-disable-next-line */}
+              <a
+                className=" font-md tracking-widest p-8 text-center"
+                href="https://tmdb-movies-search-three.vercel.app/"
+                target="_blank"
+              >
+                The Movie DataBase 
               </a>
             </div>
           </div>
@@ -451,7 +425,7 @@ const Page = () => {
             </div>
           </div>
           <div className="text-white text-2xl mt-5 md:text-xl md:mt-12">
-            <p>Here is my phone number</p>
+            <p>Waitin' for the Opportunity. Do Contact !</p>
             <hr className="mt-3 border-[#dc9e4b]" />
             <div className="mt-10 mb-10 w-80  h-32 bg-slate-700 rounded-lg md:text-xl">
               <div className="text-start pt-4 pl-4 font-semibold tracking-wider ">
@@ -462,7 +436,7 @@ const Page = () => {
                   ></i>
                   03248529976
                 </p>
-                <p className="text-[#dc9e4b] mt-3">Green Town , Lahore</p>
+                <p className="text-[#dc9e4b] mt-1 font-mono">Green Town , Lahore</p>
               </div>
             </div>
           </div>
